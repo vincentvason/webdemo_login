@@ -15,7 +15,7 @@
 
   if(mysqli_num_rows($res) == 0)
   {
-    echo(json_encode(array("res"=>"notexisted")));
+    echo(json_encode(array("res"=>"notexisted","code"=>"user")));
   }
   else
   {
@@ -30,7 +30,7 @@
     }
     else
     {
-        echo(json_encode(array("res"=>"notexisted")));
+        echo(json_encode(array("res"=>"notexisted","code"=>"pass")));
     }
   }
 ?>
